@@ -1,0 +1,77 @@
+doctype html5
+html(lang="en")
+	include include/_head.jade
+	body.page.page--catalog
+		.wrapper
+			.overlay
+			.header
+				a(href="/main.html")
+					include img/logo.svg
+			.toolbar
+				.toolbar-wrapper
+					.user-info
+						a.user(href="#")
+							img.avatar(src="img/guest.png", alt="Guest")
+							span.name Guest
+					.action
+						a.action__item.settings(href="page.html")
+							img(src="img/settings.png", alt="Settings")
+						a.action__item.cart(href="page.html")
+							img(src="img/cart.png", alt="Cart")
+							span 2
+			.content
+				.catalog.catalog--right-sidebar
+					ul.menu.menu--catalog
+						li.menu__item.menu--catalog__item
+							a(href="page.html") 
+								img.icon(src="img/hotel-information.png", alt="")
+								span Hotel information
+						li.menu__item.menu--catalog__item.menu--catalog__item--parent
+							a(href="rooms.html") 
+								img.icon(src="img/rooms.png", alt="")
+								span Rooms
+						li.menu__item.menu--catalog__item
+							a(href="page.html") 
+								img.icon(src="img/beach-and-pools.png", alt="")
+								span Beach &amp; pools
+						li.menu__item.menu--catalog__item
+							a(href="page.html")
+								img.icon(src="img/restaurants-and-bars.png", alt="")
+								span Restaurants &amp; bars
+						li.menu__item.menu--catalog__item.menu--catalog__item--parent
+							a(href="page.html") 
+								img.icon(src="img/your-room-information.png", alt="")
+								span Your room information
+						li.menu__item.menu--catalog__item
+							a(href="page.html") 
+								img.icon(src="img/photo-and-video-gallery.png", alt="")
+								span Photo &amp; video gallery	
+						li.menu__item.menu--catalog__item.menu--catalog__item--arent
+							a(href="page.html") 
+								img.icon(src="img/social-media-page.png", alt="")
+								span Social media page
+						li.menu__item.menu--catalog__item
+							a(href="page.html")
+								img.icon(src="img/news.png", alt="")
+								span News
+						li.menu__item.menu--catalog__item.menu--catalog__item--parent
+							a(href="page.html")
+								img.icon(src="img/activities-and-functions.png", alt="") 
+								span Activities &amp; functions
+						li.menu__item.menu--catalog__item
+							a(href="page.html") 
+								img.icon(src="img/ordering-and-request-page.png", alt="")
+								span Ordering &amp; request page
+						li.menu__item.menu--catalog__item.menu--catalog__item--parent
+							a(href="page.html") 
+								img.icon(src="img/reservation.png", alt="")
+								span Reservation
+						li.menu__item.menu--catalog__item.menu--catalog__item--parent
+							a(href="page.html")
+								img.icon(src="img/bodrum.png", alt="")
+								span Bodrum
+					.sidebar
+						.sidebar__wrapper
+							a(href="page.html")
+								img.icon(src="img/restaurants-and-bars.png", alt="")
+		script(src="js/main.js")	

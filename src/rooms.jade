@@ -1,0 +1,32 @@
+doctype html5
+html(lang="en")
+	include include/_head.jade
+	body.page.page--catalog
+		.wrapper
+			.overlay
+			.toolbar
+				.toolbar-wrapper
+					.user-info
+						a.user(href="catalog.html")
+							img.back(src="img/back.png", alt="Guest")
+							span.name Rooms
+			.content
+				.catalog
+					ul.menu.menu--catalog
+						li.menu__item.menu--catalog__item
+							a(href="page.html")
+								img.icon(src="img/rooms.png", alt="") 
+								span Standard
+						li.menu__item.menu--catalog__item
+							a(href="page.html")
+								img.icon(src="img/rooms.png", alt="") 
+								span Family
+						li.menu__item.menu--catalog__item
+							a(href="page.html")
+								img.icon(src="img/rooms.png", alt="") 
+								span Deluxe
+						li.menu__item.menu--catalog__item
+							a(href="page.html")
+								img.icon(src="img/rooms.png", alt="") 
+								span Suite
+		script(src="js/main.js")	

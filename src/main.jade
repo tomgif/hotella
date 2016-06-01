@@ -1,0 +1,31 @@
+doctype html5
+html(lang="en")
+	include include/_head.jade
+	body.page.page--main
+		.preloader
+			.preloader__wrapper
+				span
+				span
+				span
+		.wrapper
+			.overlay
+			.header
+				a(href="/main.html")
+					include img/logo.svg
+			.content
+				.greeting(style="display: none;")
+					img.director(src="img/director.png", alt="Oktay Ulker")
+					h1 Добро пожаловать!
+					p Мы рады приветствовать Вас в нашем отеле. Спасибо за Ваш выбор! Мы сделаем все возможное, чтобы Ваше пребывание в Spektr Hotel Bodrum было максимально комфортным
+					p Oktay Ulker <br> Управляющий отелем
+					br
+					a.button(href="catalog.html") Продолжить
+		.footer
+			.restaurant
+				a.restaurant__item(href="#")
+					include img/podval.svg
+				a.restaurant__item(href="#")
+					include img/la-colline.svg
+				a.restaurant__item(href="#")
+					include img/gusto.svg
+		script(src="js/main.js")
