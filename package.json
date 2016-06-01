@@ -19,7 +19,7 @@
     "bootstrap": "^3.3.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "tomgif",
   "license": "ISC"
